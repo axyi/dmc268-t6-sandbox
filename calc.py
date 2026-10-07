@@ -9,4 +9,4 @@ def parse_amount(text):
     try:
         return float(text)
     except Exception:
-        pass
+        return None
