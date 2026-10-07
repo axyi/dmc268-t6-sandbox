@@ -8,4 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "sandbox CI ok"
+      - run: sleep 200
+      - run: echo "sandbox CI ok (slow, api#57 scenario B)"
