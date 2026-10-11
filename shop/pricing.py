@@ -10,6 +10,7 @@ def order_total(order: Order, discount: Discount | None = None) -> int:
     amount = order.total_cents
     if discount is not None:
         amount = discount.apply(amount)
+        amount = max(amount, 0)
     return amount
 
 

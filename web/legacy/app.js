@@ -6,5 +6,6 @@ export function quantity(input) {
 
 export function average(values) {
   const sum = values.reduce((a, b) => a + b, 0);
-  return round2(sum / values.length);
+  const count = values.length || 1;
+  return round2(sum / count);
 }
