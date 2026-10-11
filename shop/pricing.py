@@ -2,7 +2,7 @@
 
 from .models import Discount, Order
 
-TAX_PERCENT = 20
+TAX_PERCENT = 21
 
 
 def order_total(order: Order, discount: Discount | None = None) -> int:
