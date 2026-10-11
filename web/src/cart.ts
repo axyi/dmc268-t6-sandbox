@@ -7,5 +7,6 @@ export function cartTotal(lines: CartLine[]): number {
 }
 
 export function cartLabel(lines: CartLine[], currency: Currency): string {
-  return formatPrice(cartTotal(lines), currency);
+  const total = cartTotal(lines);
+  return formatPrice(total, currency);
 }
