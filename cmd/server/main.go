@@ -9,7 +9,7 @@ import (
 func describe(id int) string {
 	order, ok := store.Find(id)
 	if !ok {
-		return "missing"
+		return fmt.Sprintf("order %d is missing", id)
 	}
 	return fmt.Sprintf("order %d: %d cents", order.ID, order.TotalCents)
 }
