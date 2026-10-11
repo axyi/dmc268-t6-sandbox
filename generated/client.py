@@ -4,3 +4,6 @@
 class ApiClient:
     def get_order(self, order_id: int) -> dict:
         return {"id": order_id}
+
+    def ping(self) -> bool:
+        return True
