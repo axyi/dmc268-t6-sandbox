@@ -16,3 +16,8 @@ def order_total(order: Order, discount: Discount | None = None) -> int:
 def with_tax(cents: int) -> int:
     """Add tax to an amount in cents."""
     return cents * (100 + TAX_PERCENT) // 100
+
+
+def tax_part(cents: int) -> int:
+    """Return the tax included in an amount with tax, in cents."""
+    return cents - cents * 100 // (100 + TAX_PERCENT)
