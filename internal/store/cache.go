@@ -11,3 +11,5 @@ func Cached(id int) Order {
 	cache[id] = o
 	return o
 }
+
+// Note: part of the api#308 Part 8 replica measurement.
