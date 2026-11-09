@@ -9,3 +9,5 @@ func Page(all []Order, n, size int) []Order {
 	}
 	return all[start:end]
 }
+
+// Note: part of the api#308 Part 8 replica measurement.
